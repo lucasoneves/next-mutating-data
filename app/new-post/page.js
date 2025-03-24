@@ -17,7 +17,7 @@ export default function NewPostPage() {
     if (!content || content.trim().length === 0) {
       errors.push("Content is required");
     }
-    if (!image) {
+    if (!image || image.size === 0) {
       errors.push("Image is required");
     }
 
